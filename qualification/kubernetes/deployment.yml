@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
         - name: qualification
-          image: username/qualification:latest
+          image: 496278789073.dkr.ecr.ap-northeast-1.amazonaws.com/recruit-qualification:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
           readinessProbe:
