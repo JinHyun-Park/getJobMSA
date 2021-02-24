@@ -20,6 +20,17 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
+          env:
+            - name: PASSWD
+              valueFrom:
+                secretKeyRef:
+                  name: my-password
+                  key: password
+            - name: CONFIGDATA
+              valueFrom:
+                configMapKeyRef:
+                  name: hotelcm
+                  key: text1
           readinessProbe:
             httpGet:
               path: '/actuator/health'

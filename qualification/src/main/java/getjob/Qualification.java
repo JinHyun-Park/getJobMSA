@@ -21,6 +21,9 @@ public class Qualification {
         Confirmed confirmed = new Confirmed();
         BeanUtils.copyProperties(this, confirmed);
         confirmed.publishAfterCommit();
+        
+        System.out.println("Config Data : " + System.getenv("CONFIGDATA"));
+        System.out.println("Secret Data : " + System.getenv("PASSWD"));
 
         try {
             Thread.currentThread().sleep((long) (400 + Math.random() * 220));

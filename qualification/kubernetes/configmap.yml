@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hotelcm
+  namespace: recruit
+data:
+  text1: config java
+  text2: Welcomes You
