@@ -83,4 +83,4 @@ api:
 hystrix:
   command:
     default:
-      execution.isolation.thread.timeoutInMilliseconds: 110
+      execution.isolation.thread.timeoutInMilliseconds: 610
