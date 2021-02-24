@@ -1,0 +1,12 @@
+getjob\AbstractEvent$1.class
+getjob\RecruitmentController.class
+getjob\Applied.class
+getjob\Canceled.class
+getjob\external\Qualification.class
+getjob\RecruitmentRepository.class
+getjob\external\QualificationService.class
+getjob\Recruitment.class
+getjob\PolicyHandler.class
+getjob\config\kafka\KafkaProcessor.class
+getjob\RecruitmentApplication.class
+getjob\AbstractEvent.class

@@ -1,0 +1,74 @@
+server:
+  port: 8080
+
+---
+
+spring:
+  profiles: default
+  cloud:
+    gateway:
+      routes:
+        - id: recruitment
+          uri: http://localhost:8081
+          predicates:
+            - Path=/recruitments/** 
+        - id: qualification
+          uri: http://localhost:8082
+          predicates:
+            - Path=/qualifications/** 
+        - id: enrollment
+          uri: http://localhost:8083
+          predicates:
+            - Path=/enrollments/** 
+        - id: mypage
+          uri: http://localhost:8084
+          predicates:
+            - Path= /mypages/**
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "*"
+            allowedMethods:
+              - "*"
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
+
+
+---
+
+spring:
+  profiles: docker
+  cloud:
+    gateway:
+      routes:
+        - id: recruitment
+          uri: http://recruitment:8080
+          predicates:
+            - Path=/recruitments/** 
+        - id: qualification
+          uri: http://qualification:8080
+          predicates:
+            - Path=/qualifications/** 
+        - id: enrollment
+          uri: http://enrollment:8080
+          predicates:
+            - Path=/enrollments/** 
+        - id: mypage
+          uri: http://mypage:8080
+          predicates:
+            - Path= /mypages/**
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "*"
+            allowedMethods:
+              - "*"
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
+
+server:
+  port: 8080
