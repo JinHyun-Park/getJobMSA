@@ -14,6 +14,14 @@
     - [동기 호출](#동기-호출)
     - [비동기 호출](#비동기-호출)
     - [Saga Pattern / 보상 트랜잭션](#Saga-Pattern--보상-트랜잭션)
+    - [CQRS](#CQRS)
+  - [운영](#운영)
+    - [Liveness / Readiness 설정](#Liveness--Readiness-설정)
+    - [Self Healing](#Self-Healing)
+    - [CI/CD 설정](#CICD설정)
+    - [동기식 호출 / 서킷 브레이킹 / 장애격리](#동기식-호출--서킷-브레이킹--장애격리)
+    - [오토스케일 아웃](#오토스케일-아웃)
+    - [ConfigMap / Secret](#ConfigMap--Secret)
 
 ## 시나리오
 
@@ -40,3 +48,19 @@
 ### 비동기 호출
 
 ### Saga Pattern / 보상 트랜잭션
+
+### CQRS
+
+## 운영
+
+### Liveness / Readiness 설정
+
+### Self Healing
+
+### CI/CD 설정
+
+### 동기식 호출 / 서킷 브레이킹 / 장애격리
+
+### 오토스케일 아웃
+
+### ConfigMap / Secret
